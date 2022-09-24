@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+    <title>ČUČE ZMIJE</title>
+
+    <style>
+
+        h1 {
+            color: brown;
+            font-family: 'Courier New', Courier, monospace;
+        }
+     
+        label{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            display: grid;
+            place-items: center;
+            margin-right: 50px; 
+            margin-left: 50px; 
+        }
+
+        body{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+
+        #game-board{
+           /* background-image: url("https://wallpapercave.com/wp/wp2409705.jpg"); */
+           background-color: brown;
+           width: 100vmin;
+           height: 100vmin;
+           display: grid;
+           grid-template-rows: repeat(21, 1fr);
+           grid-template-columns: repeat(21, 1fr);
+           box-shadow: black 20px 5px 50px; 
+           
+        }
+
+        .snake{
+            background-color: rgb(2, 136, 2);
+            border: .25vmin solid rgb(255, 255, 255);
+        }
+
+        .food{
+            background-color: rgb(255, 0, 0);
+            border: .25vmin solid rgb(255, 255, 255);
+        }
+
+    </style>
+
+    <script src="game.js" defer type=""></script>
+
+</head>
+<body>
+
+<label>
+    <h1>SQUAT SNAKE</h1>
+    <div id="score"></div>
+</label>
+
+    <div id="game-board"></div>
+
+</body>
+</html>
