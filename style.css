@@ -12,6 +12,13 @@
   border-radius: 10px;
   background-color: brown;
   width: max-content;
+  transition: 0.4s;
+}
+
+.btn:hover {
+  padding: 8px 13px 8px 13px;
+  background-color: rgb(116, 29, 29);
+  transition: 0.4s;
 }
 
 .play-screen {
@@ -48,7 +55,7 @@
 .mobile-version .btn a {
   color: aliceblue;
   font-family: 'Courier New', Courier, monospace;
-  font-size: 40px;
+  font-size: 80px;
 }
 
 

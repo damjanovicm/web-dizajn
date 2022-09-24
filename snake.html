@@ -41,6 +41,7 @@
             background-image: url("snake-bg.png");
             background-size: cover;
             /* background-color: brown; */
+            border-radius: 50% 20% / 10% 40%;
             width: 80vmin;
             height: 80vmin;
             display: grid;
@@ -83,6 +84,11 @@
             margin-bottom: 30px;
         }
 
+        .arrows img {
+            margin-top: 20px;
+            width: 150px;
+            height: 110px;
+        }
 
         /* MEDIA */
 
@@ -135,13 +141,18 @@
         <div id="score"></div>
 
         <div class="audio">
-            <audio src="cc1-song.mp3" controls loop="" autoplay></audio>
+            <audio src="cc1-song.mp3" controls autoplay loop=""></audio>
         </div>
 
         <p class="music-paragraph">
             For better expirience,<br>
             try playing some music.
         </p>
+
+        <div class="arrows">
+            <img src="arrows.PNG">
+        </div>
+
 
     </label>
 
