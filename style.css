@@ -1,3 +1,19 @@
+.background {
+  background: url("background-desktop-4k.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.btn {
+  padding: 5px 10px 5px 10px;
+  border-radius: 10px;
+  background-color: brown;
+  width: max-content;
+}
+
 .play-screen {
   position: absolute;
   top: 50%;
@@ -7,20 +23,56 @@
 }
 
 .play-screen .uip {
-    color: brown;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 100px;
+  color: brown;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 100px;
 }
 
-.play-screen .btn {
-  padding: 5px 10px 5px 10px;
-  border-radius: 10px;
-  background-color: brown;
-}
-
-.play-screen .btn a{
+.play-screen .btn a {
   text-align: center;
   text-decoration: none;
   font-family: 'Courier New', Courier, monospace;
   color: aliceblue;
+  font-size: 35px;
+}
+
+.mobile-version {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.mobile-version .btn a {
+  color: aliceblue;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 40px;
+}
+
+
+/* MEDIA */
+
+
+@media (max-width: 1393px) {
+  .play-screen {
+    display: none;
+  }
+
+  .mobile-version {
+    display: block;
+  }
+
+
+  .background {
+    background-image: url("background-tablet.jpg");
+  }
+
+}
+
+@media (max-width: 980px) {
+  .background {
+    background-image: url("bg-mobile.jpg");
+  }
 }
