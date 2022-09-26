@@ -1,3 +1,7 @@
+*{
+  user-select: none;
+}
+
 /* PLAY BUTTON STYLE START*/
 
 .video-play-button {
