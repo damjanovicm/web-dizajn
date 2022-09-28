@@ -90,15 +90,7 @@ label {
 
 @media (max-width: 991px) {
 
-    .title {
-       display: none;
-    }
-    
-    .title-mobile {
-        display: block;
-        margin-bottom: 20px;
-    }
-
+  
     .cover {
         text-align: center;
     }

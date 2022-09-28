@@ -1,6 +1,8 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
-  user-select: none;
+  user-select: none !important;
 }
 
 body {
@@ -14,16 +16,22 @@ body {
 .world {
   overflow: hidden;
   position: relative;
-  width: 70% !important ;
+  width: 70% !important;
+  background: url("imgs/background-img.PNG");
+  background-size: cover;
 }
 
 .score {
   position: absolute;
-  font-size: 3vmin;
+  font-size: 50px;
   right: 1vmin;
   top: 1vmin;
   font-family: 'Courier New', Courier, monospace;
   font-weight: 600;
+  transition: 0.2s;
+  color: aliceblue;
+  text-shadow: 2px 4px 4px black;
+
 }
 
 .start-screen {
@@ -63,10 +71,16 @@ body {
   bottom: 0;
 }
 
-.world .back{ 
+.world .start-screen{
+  color: aliceblue;
+  text-shadow: 2px 4px 4px black;
+}
+
+.world .back {
   position: absolute;
   display: flex;
   justify-content: end;
+  text-shadow: 2px 4px 4px black;
 }
 
 .world .back a i {
@@ -86,14 +100,97 @@ body {
   transition: 0.2s;
 }
 
+.back-mobile {
+  display: none;
+  position: absolute;
+  top: 10%;
+  transition: 0.2s;
+
+}
+
+
+.back-mobile a i {
+  color: aliceblue;
+  align-self: center;
+  padding: 13px 16px 13px 16px;
+  border-radius: 10px;
+  background-color: brown;
+  width: max-content;
+  transition: 0.2s;
+  font-size: 25px;
+}
+
+.audio {
+  position: absolute;
+  top: 20%;
+}
+
+.about-game {
+  position: absolute;
+  top: 75%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px 20px;
+}
+
+.about-game p {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.about-game .p2 {
+  display: none;
+  margin-top: 15px;
+  font-size: 15px;
+  opacity: 0.5;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+}
+
 @media (max-width: 980px) {
-  
+
+
   .world {
-    width: 90% !important ;
+    width: 90% !important;
   }
 
-  .world .back{
+  .world .back {
     display: none;
+  }
+
+  .back-mobile {
+    display: block;
+  }
+
+  .score {
+    font-size: 20px;
+    transition: 0.2s;
+
+  }
+
+  .audio {
+    top: 115%;
+  }
+
+  .about-game .p2 {
+    display: block;
+  }
+
+}
+
+@media (min-width: 2100px) {
+  .world .back a i {
+    padding: 23px 26px 23px 26px;
+    font-size: 55px;
+  }
+
+  .world .score {
+    font-size: 80px;
+    transition: 0.2s;
+  }
+
+  .about-game p {
+    font-size: 50px;
   }
 
 }

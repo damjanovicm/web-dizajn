@@ -7,7 +7,7 @@
 .video-play-button {
   position: absolute;
   z-index: 10;
-  top: 50%;
+  top: 55%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
   box-sizing: content-box;
@@ -132,16 +132,19 @@
 }
 
 .mobile-version {
-  display: none;
+ display: none;
+}
+
+.mobile-version .uip {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
 }
 
 .mobile-version .btn a {
-  color: aliceblue;
+    color: aliceblue;
   font-family: 'Courier New', Courier, monospace;
   font-size: 80px;
 }

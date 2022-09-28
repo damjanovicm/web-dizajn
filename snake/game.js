@@ -2,7 +2,7 @@
 
 let lastRenderTime = 0
 const gameBoard = document.getElementById('game-board')
-const SNAKE_SPEED = 8
+const SNAKE_SPEED = 7
 const snakeBody = [{x: 11, y: 11}]
 let inputDirection = {x: 0, y: 0}
 let lasInputDirection = {x: 0, y: 0}
