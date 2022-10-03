@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Web Design | Classes</title>
+
+    <style>
+        table {
+            border-collapse: collapse;
+            background-color: rgb(221, 33, 33);
+            box-shadow: 10px 10px 20px;
+            margin-bottom: 20px;
+        }
+
+        table td {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: center;
+            border: 2px solid rgb(147, 21, 21);
+            font-size: 30px;
+            padding: 10px;
+            color: rgb(217, 222, 227);
+            text-shadow: 2px 2px 5px black;
+            transition: 0.2s;
+        }
+
+        table td:hover {
+            font-size: 35px;
+            color: aliceblue;
+            transition: 0.2s;
+            background-color: rgb(182, 7, 7);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            background-color: rgb(227, 31, 31);
+            width: max-content;
+            border: 4px solid rgb(103, 17, 17);
+            border-radius: 10px;
+            box-shadow: 10px 10px 20px;
+        }
+
+        form input {
+            padding: 10px;
+            width: 400px;
+            border-radius: 20px;
+            transition: 0.2s;
+        }
+
+        form input:hover {
+            padding: 15px 10px;
+            transition: 0.2s;
+        }
+
+        form .btn{
+            display: flex;
+            flex-direction: row;
+        }
+
+        #reset{
+            margin-right: 20px;
+        }
+        
+        form .btn input{
+            width: 200px;
+            padding: 10px;
+            border-radius: 20px;
+        }
+
+        form textarea{
+            padding: 10px;
+            width: 400px;
+            box-shadow: 1px 1px 4px black;
+        }
+
+        form textarea:hover {
+            padding: 15px 10px;
+            transition: 0.2s;
+        }
+
+        .media{
+            display: flex;
+            flex-direction: column;
+        }
+
+        audio{
+            border-radius: 40px;
+            margin: 25px 25px 0 0;
+            box-shadow: 10px 10px 20px;
+        }
+
+        video{
+            margin-top: 30px;
+            border-radius: 30px;
+            box-shadow: 1px 1px 4px black;
+            width: 450px;
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+
+    <table>
+        <tr>
+            <td>Filip</td>
+            <td>Marko</td>
+            <td>Janko</td>
+            <td>Opel</td>
+        </tr>
+        <tr>
+            <td>Jovan</td>
+            <td>Pavle</td>
+            <td>Drasko</td>
+            <td>Audi</td>
+        </tr>
+    </table>
+
+    <form action="">
+        <input type="text" placeholder="Ime"><br>
+        <input type="text" placeholder="Prezime"><br>
+        <input type="text" placeholder="Telefon"><br>
+        <input type="email" placeholder="Email"><br>
+        <input type="password" placeholder="Password"><br>
+        <textarea rows="6" placeholder="Napisi poruku..."></textarea><br>
+        <div class="btn">
+            <input type="reset" id="reset">
+            <input type="submit" value="Prijavi se" id="submit">
+        </div>
+    </form>
+
+    <div class="media">
+        <audio src="zikamu/cc3.mp3" controls ></audio>
+    <audio src="zikamu/AUUGHHH!.mp3" controls ></audio>
+
+    <video src="klipz/video.mp4" controls></video>
+    </div>
+
+</body>
+
+</html>
