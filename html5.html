@@ -36,7 +36,6 @@
             font-size: 35px;
             color: aliceblue;
             transition: 0.2s;
-            background-color: rgb(182, 7, 7);
         }
 
         .media {
@@ -75,6 +74,18 @@
             border: 2px solid;
             width: 446px;
         }
+
+        table tr:nth-child(odd){
+            background-color: aqua;
+        }
+
+        table tr:nth-child(odd) td:hover{
+            background-color: rgb(221, 33, 33);
+        }
+
+        table tr:nth-child(even) td:hover{
+            background-color: aqua;
+        }
         
     </style>
 
@@ -91,7 +102,7 @@
 
     <table>
         <tr>
-            <td>Filip</td>
+            <td><a href="boostrap.html">Boostrap</a></td>
             <td>Marko</td>
             <td>Janko</td>
             <td>Opel</td>
