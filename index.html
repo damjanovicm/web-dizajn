@@ -50,6 +50,7 @@
         form .btn {
             display: flex;
             flex-direction: row;
+            justify-content: center;
         }
 
         #reset {
@@ -73,6 +74,25 @@
             padding: 15px 10px;
             transition: 0.2s;
         }
+
+        form .port{
+            text-align: center;
+            font-size: 20px;
+            color: white;
+            white-space: inherit;
+            border: 5px solid white;
+            padding: 7px;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: 0.2s;
+            margin: 15px 0 5px 0;
+        }
+
+        form .port:hover{
+            font-size: 25px;
+            transition: 0.2s;
+        }
+
     </style>
 
 
@@ -88,9 +108,9 @@
         <input type="password" placeholder="Password"><br>
         <textarea rows="6" placeholder="Napisi poruku..."></textarea><br>
         <div class="btn">
-            <input type="reset" id="reset">
             <input type="submit" value="Predji na html5 stranu" id="submit">
         </div>
+        <a class="port" href="portfolio/index.html">Portfolio</a>
     </form>
 
 </body>
