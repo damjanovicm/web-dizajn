@@ -287,6 +287,9 @@ html {
         text-align: end;
     }
 
+    .navbar .navbar-brand img{
+        width: 25%;
+    }
 
     .overlay-content{
         display: block;
@@ -294,10 +297,12 @@ html {
     
     .closebtn{
         display: block;
+        font-size: 150px !important;
     }
     
     .navbar span{
         display: block;
+        font-size: 60px;
     }
 
 
