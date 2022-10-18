@@ -28,7 +28,7 @@
 
             <div class="overlay-content">
                 <a href="#about" onclick="closeNav()">O meni</a>
-                <a href="#">Kontakt</a>
+                <a href="#contact" onclick="closeNav()">Kontakt</a>
             </div>
 
         </div>
@@ -41,59 +41,92 @@
                     <a class="nav-link" href="#about">O meni <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Kontakt</a>
+                    <a class="nav-link" href="#contact">Kontakt</a>
                 </li>
             </ul>
         </div>
     </nav>
 
     <div class="container">
+        <section id="home" class="one">
+            <div class="short-info">
+                <p class="name hidden">MIHAILO DAMJANOVIC</p>
+                <p class="job hidden">Web developer i muzičar</p>
+                <p class="info hidden">Poslednjih 6 godina trudim se da prosirim svoje znjanje na polju razvoja
+                    informacionih sistema i tehnologija.
+                    Sa sviranjem muzike sam se susreo prije deset-ak godina,
+                    pa svoje slobodno vrijeme volim da provodim svirajuci gitaru i klavir.
+                </p>
+            </div>
+            <img src="img/ja-png.png" alt="" class="me hidden">
+        </section>
 
-    <section id="home" class="one">
-        <div class="short-info">
-            <p class="name hidden">MIHAILO DAMJANOVIC</p>
-            <p class="job hidden">Web developer i muzičar</p>
-            <p class="info hidden">Poslednjih 6 godina trudim se da prosirim svoje znjanje na polju razvoja
-                informacionih sistema i tehnologija.
-                Sa sviranjem muzike sam se susreo prije deset-ak godina,
-                pa svoje slobodno vrijeme volim da provodim svirajuci gitaru i klavir.
-            </p>
+        <div id="about" class="about-me hidden">
+            O meni
         </div>
-        <img src="img/ja-png.png" alt="" class="me hidden">
-    </section>
 
-    <div id="about" class="about-me hidden">
-        O meni
+        <section class="two">
+            <div class="music">
+
+                <iframe width="690px" height="350" src="https://www.youtube.com/embed/DJBiuNar_Bk"
+                    title="Miha, demonstracija sile!" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+
+                <div class="about-video">
+                    Sa svojih deset godina, počeo sam da sviram gitaru. Tada nastaje moja ljubav prema muzici.
+                    Oduvijek sam bio vise zainteresovan za metal ali su se kroz odrastanje iteresovanja za žanrove
+                    mijenjala. Trenutno najvise volim da sviram narodnu muziku kao i kratke solaže.
+                </div>
+            </div>
+        </section>
+
+        <section class="three">
+            <div class="city">
+                <img class="hidden" src="img/pc.jpg" alt="">
+                <div class="about-city">
+                    Još kao mali, volio sam da igram igrice i generalno provodim vrijeme na kompjuteru.
+                    Prve ozbiljnije korake sa radom na racunaru napravio sam kada sam poceo da montiram klipove,
+                    zatim je taljubav prerasla u programiranje, pa sam i zbog toga upisao fakultet informacionih
+                    tehnologija i sistema.
+                </div>
+            </div>
+        </section>
+
+        <section class="three">
+            <div class="city">
+                <div class="about-city hidden">
+                    Takodje svoje slobodno vrijeme volim da provodim izlazeci u grad sa prijateljima.
+                    Vjerovatno mislite, kada izadjem u grad, da pijem...ali ne pijem, lešim se. Ne radi
+                    se o tome što nemam kontrolu, mada je i to problem, ali necu da dopustim sebi da se sjutradan
+                    sjećam blamova tokom prilaženja đevojkama.
+                </div>
+                <img src="img/izlazak.jpg" alt="">
+            </div>
+        </section>
     </div>
 
-    <section class="two">
-        <div class="music">
-            
-            <iframe width="690px" height="350" src="https://www.youtube.com/embed/DJBiuNar_Bk" 
-            title="Miha, demonstracija sile!" frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen></iframe>
-
-            <div class="about-video">
-                Sa svojih deset godina, počeo sam da sviram gitaru. Tada nastaje moja ljubav prema muzici.
-                Oduvijek sam bio vise zainteresovan za metal ali su se kroz odrastanje iteresovanja za žanrove
-                mijenjala. Trenutno najvise volim da sviram narodnu muziku kao i kratke solaže.
+    <footer>
+        <div id="contact" class="container">
+            <div class="row">
+                <div class="logo">
+                    <img src="img/logo-png-shadow-white.png" alt="">
+                </div>
+                <div class="contact">
+                    <div class="contact-title">Contact</div>
+                    <a class="mail" href="">E-mail: mihailo.damjanovic@udg.edu.me</a>
+                    <div class="phone">Phone: 067 / 123 - 123</div>
+                </div>
+                <div class="selector">
+                    <a href="#home">Home</a>
+                    <br>
+                    <a href="#about">About</a>
+                </div>
             </div>
+            <hr>
+            <div class="copyright">@Copyright.Ko kopira bijem ga.</div>
         </div>
-    </section>
-
-    <section class="three">
-        <div class="city">
-            <div class="about-city hidden">
-                Takodje svoje slobodno vrijeme volim da provodim izlazeci u grad sa prijateljima.
-                Vjerovatno mislite, kada izadjem u grad, da pijem...ali ne pijem, lešim se. Ne radi
-                se o tome što nemam kontrolu, mada je i to problem, ali necu da dopustim sebi da se sjutra
-                dan sjećam blamova tokom prilaženja đevojkama.
-            </div>
-            <img src="img/izlazak.jpg" alt="">
-        </div>
-    </section>
-    </div>
+    </footer>
 
 
 
