@@ -53,25 +53,20 @@ html {
 }
 
 .one {
-    width: 100%;
-    margin-top: 100px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    margin: 100px 0 50px 0;
 }
 
 .one .me {
-    width: 900px;
-    height: 900px;
+    width: 100%;
     z-index: 1;
 }
 
 .one .short-info {
     z-index: 2;
     align-self: center;
-    padding: 100px;
-    position: relative;
-    max-width: 900px;
 }
 
 .one .short-info .name {
@@ -125,26 +120,15 @@ html {
 }
 
 .two .music {
-    padding: 100px 0;
+    margin-top: 100px;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-}
-
-.two .music .video video {
-    width: 700px;
-    border-radius: 30px;
-    transition: 0.3s ease;
-}
-
-.two .music .video video:hover {
-    width: 750px;
-    transition: 0.3s ease;
 }
 
 .two .music .about-video {
-    min-width: 700px;
-    padding: 40px;
+    width: 70%;
+    flex-direction: column;
+    padding: 0 40px;
     align-self: center;
     font-size: 20px;
     transition: 0.3s;
@@ -161,11 +145,10 @@ html {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    flex-wrap: nowrap;
 }
 
 .three .city .about-city {
-    min-width: 700px;
+    flex-direction: column;
     padding: 40px;
     align-self: center;
     font-size: 20px;
@@ -178,6 +161,7 @@ html {
 }
 
 .three .city img {
+    flex-direction: column;
     border-radius: 50%;
     width: 57%;
     transition: 0.3s ease;
@@ -209,6 +193,7 @@ html {
     }
 
     .one .short-info {
+        padding: 100px;
         position: absolute;
     }
 
@@ -221,22 +206,23 @@ html {
         text-shadow: 0 0 7px black;
     }
 
+    .one .me {
+        width: 100% !important;
+    }
+
     .one .short-info .info {
         color: white;
         text-shadow: 0 0 4px black;
-        }
+    }
 
     .two .music .about-video {
+        padding: 40px;
+        width: 100%;
         font-size: 35px;
     }
 
     .two .music {
         flex-wrap: wrap;
-    }
-
-    .two .music .video {
-        width: 100%;
-        text-align: center;
     }
 
     .three .city {
@@ -260,15 +246,15 @@ html {
 
 }
 
-.overlay-content{
+.overlay-content {
     display: none;
 }
 
-.closebtn{
+.closebtn {
     display: none;
 }
 
-.navbar span{
+.navbar span {
     display: none;
 }
 
@@ -287,20 +273,26 @@ html {
         text-align: end;
     }
 
-    .navbar .navbar-brand img{
+    .navbar .navbar-brand img {
         width: 25%;
     }
 
-    .overlay-content{
+    .overlay-content {
         display: block;
     }
-    
-    .closebtn{
+
+    .overlay-content a {
+        text-decoration: none !important;
+    }
+
+    .closebtn {
         display: block;
+        margin-top: -90px;
         font-size: 150px !important;
+        text-decoration: none !important;
     }
-    
-    .navbar span{
+
+    .navbar span {
         display: block;
         font-size: 60px;
     }
@@ -365,25 +357,11 @@ html {
 
 }
 
-@media (min-width:1920px) {
+@media (max-width:1355px) {
 
-    .one {
-        justify-content: center;
+    .one .me {
+        width: 60%;
+        transition: 1s;
     }
-
-    .two {
-        position: relative;
-        left: 50%;
-        transform: translate(-50%);
-        max-width: 1920px;
-    }
-
-    .three {
-        position: relative;
-        left: 50%;
-        transform: translate(-50%);
-        max-width: 1920px;
-    }
-
 
 }
