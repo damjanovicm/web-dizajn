@@ -85,11 +85,37 @@ html {
     color: rgb(151, 151, 151);
 }
 
-.one .short-info .job {
+.one .short-info .job{
+    position: relative;
+}
+
+.one .short-info .job .job-name{
     font-size: 90px;
     font-weight: 900;
     line-height: 90px;
     padding: 20px 0 20px 0;
+    transition: 0.3s;
+}
+
+.one .short-info .job p:nth-child(1){
+    color: transparent;
+    -webkit-text-stroke: 2px #202020;
+}
+
+.one .short-info .job p:nth-child(2){
+    margin-top: -326px;
+    animation: animate 4s ease-in-out infinite;
+}
+
+@keyframes animate{
+    0%,100%{
+        clip-path: polygon(0 25%, 18% 30%, 35% 40%, 50% 52%, 63% 59%, 75% 
+        62%, 88% 61%, 100% 56%, 100% 100%, 0% 100%);
+    }
+    50%{
+        clip-path: polygon(0 64%, 17% 63%, 34% 63%, 51% 60%, 69% 49%, 85% 41%,
+         93% 39%, 100% 40%, 100% 100%, 0% 100%);
+    }
 }
 
 .one .short-info .info {
@@ -281,37 +307,27 @@ footer .container .copyright {
         font-size: 40px;
     }
 
-
-    .one .short-info .info {
-        font-size: 30px;
-    }
-
     .one {
-        margin-top: 200px;
+        margin-top: 50px;
         justify-content: center;
     }
 
     .one .short-info {
+        margin-top: 650px;
         padding: 100px;
         position: absolute;
     }
 
-    .one .short-info .name {
-        color: black;
-    }
-
-    .one .short-info .job {
-        color: #fff;
-        text-shadow: 0 0 7px black;
+    .one .short-info .info {
+        font-size: 30px;
     }
 
     .one .me {
         width: 200% !important;
     }
 
-    .one .short-info .info {
-        color: white;
-        text-shadow: 0 0 4px black;
+    .about-me {
+        margin-top: 250px;
     }
 
     .two .music .about-video {
@@ -358,6 +374,22 @@ footer .container .copyright {
 }
 
 @media (max-width:991px) {
+
+    .one .short-info .job p:nth-child(2){
+        margin-top: -236px;
+        animation: animate-2 4s ease-in-out infinite;
+    }
+
+    @keyframes animate-2{
+        0%,100%{
+            clip-path: polygon(0% 0%, 16% 12%, 27% 22%, 43% 31%, 61% 38%, 77% 
+            37%, 92% 32%, 100% 25%, 100% 99%, 0% 100%);
+        }
+        50%{
+            clip-path: polygon(0 25%, 14% 30%, 28% 32%, 44% 33%, 60% 28%, 
+            74% 20%, 86% 11%, 100% 0, 100% 99%, 0% 100%);
+        }
+    }
 
     #preloader {
         background-size: 100%;
@@ -463,7 +495,7 @@ footer .container .copyright {
     }
 
     footer .container .row .logo {
-        width: 100%;
+        display: none;
     }
 
     footer .container .row {
