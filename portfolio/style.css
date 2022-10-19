@@ -295,7 +295,17 @@ footer .container .copyright {
     padding: 20px 0 40px 0;
 }
 
+.overlay-content {
+    display: none;
+}
 
+.closebtn {
+    display: none;
+}
+
+.navbar span {
+    display: none;
+}
 
 @media (max-width:980px) {
 
@@ -357,20 +367,9 @@ footer .container .copyright {
 
     .three .city .about-city {
         font-size: 35px;
-    }
+ 
+   }
 
-}
-
-.overlay-content {
-    display: none;
-}
-
-.closebtn {
-    display: none;
-}
-
-.navbar span {
-    display: none;
 }
 
 @media (max-width:991px) {
