@@ -1,152 +1,117 @@
 <!DOCTYPE html>
+<html>
 
 <head>
+    <title>Web Design | Classes</title>
 
-    <title>Portfolio | Mihailo Damjanovic</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@500;700&display=swap" rel="stylesheet">
-    <link rel="icon" href="img/logo-png-shadow-white.png" type="image/icon type">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+    <style>
+        body {
+            background-image: url(imgs/hacker-bg.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: black;
+        }
+
+        form {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            background: transparent;
+            width: max-content;
+            border: 4px solid rgb(229, 229, 229);
+            border-radius: 10px;
+            box-shadow: 10px 10px 20px white;
+        }
+
+        form input {
+            padding: 10px;
+            border-radius: 20px;
+            transition: 0.2s;
+        }
+
+        form input:hover {
+            padding: 15px 10px;
+            transition: 0.2s;
+        }
+
+        form .btn {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        #reset {
+            margin-right: 20px;
+        }
+
+        form .btn input {
+            width: 200px;
+            padding: 10px;
+            border-radius: 20px;
+        }
+
+        form textarea {
+            padding: 10px;
+            min-width: 446px;
+            box-shadow: 1px 1px 4px black;
+            transition: 0.2s;
+        }
+
+        form textarea:hover {
+            padding: 15px 10px;
+            transition: 0.2s;
+        }
+
+        form .port{
+            text-align: center;
+            font-size: 20px;
+            color: white;
+            white-space: inherit;
+            border: 5px solid white;
+            padding: 7px;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: 0.2s;
+            margin: 15px 0 5px 0;
+        }
+
+        form .port:hover{
+            font-size: 25px;
+            transition: 0.2s;
+        }
+
+    </style>
+
 
 </head>
 
 <body>
 
-    <div id="preloader"></div>
-
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-        <a class="navbar-brand" href="#home">
-            <img src="img/logo-png-shadow.png" alt="" class="logo">
-        </a>
-
-        <div id="myNav" class="overlay">
-
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-
-            <div class="overlay-content">
-                <a href="#about" onclick="closeNav()">O meni</a>
-                <a href="#contact" onclick="closeNav()">Kontakt</a>
-            </div>
-
+    <form action="html5.html">
+        <input type="text" placeholder="Ime"><br>
+        <input type="text" placeholder="Prezime"><br>
+        <input type="text" placeholder="Telefon"><br>
+        <input type="email" placeholder="Email"><br>
+        <input type="password" placeholder="Password"><br>
+        <textarea rows="6" placeholder="Napisi poruku..."></textarea><br>
+        <div class="btn">
+            <input type="submit" value="Predji na html5 stranu" id="submit">
         </div>
-
-        <span onclick="openNav()" class="navbar-toggler-icon"></span>
-
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#about">O meni <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Kontakt</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-    <div class="container">
-        <section id="home" class="one">
-            <div class="short-info">
-                <p class="name hidden">MIHAILO DAMJANOVIC</p>
-                <div class="job">
-                    <p class="job-name hidden">Web developer i muzičar</p>
-                    <p class="job-name hidden">Web developer i muzičar</p>
-                </div>
-                <p class="info hidden">Poslednjih 6 godina trudim se da prosirim svoje znjanje na polju razvoja
-                    informacionih sistema i tehnologija.
-                    Sa sviranjem muzike sam se susreo prije deset-ak godina,
-                    pa svoje slobodno vrijeme volim da provodim svirajuci gitaru i klavir.
-                </p>
-            </div>
-            <img src="img/ja-png.png" alt="" class="me hidden">
-        </section>
-
-        <div id="about" class="about-me hidden">
-            O meni
-        </div>
-
-        <section class="two">
-            <div class="music">
-
-                <iframe width="690px" height="350" src="https://www.youtube.com/embed/DJBiuNar_Bk"
-                    title="Miha, demonstracija sile!" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-
-                <div class="about-video">
-                    Sa svojih deset godina, počeo sam da sviram gitaru. Tada nastaje moja ljubav prema muzici.
-                    Oduvijek sam bio vise zainteresovan za metal ali su se kroz odrastanje iteresovanja za žanrove
-                    mijenjala. Trenutno najvise volim da sviram narodnu muziku kao i kratke solaže.
-                </div>
-            </div>
-        </section>
-
-        <section class="three">
-            <div class="city">
-                <img class="hidden" src="img/pc.jpg" alt="">
-                <div class="about-city">
-                    Još kao mali, volio sam da igram igrice i generalno provodim vrijeme na kompjuteru.
-                    Prve ozbiljnije korake sa radom na racunaru napravio sam kada sam poceo da montiram klipove,
-                    zatim je ta ljubav prerasla u programiranje, te sam i zbog toga upisao fakultet informacionih
-                    tehnologija i sistema.
-                </div>
-            </div>
-        </section>
-
-        <section class="three">
-            <div class="city">
-                <div class="about-city hidden">
-                    Takodje svoje slobodno vrijeme volim da provodim izlazeci u grad sa prijateljima.
-                    Vjerovatno mislite, kada izadjem u grad, da pijem...ali ne pijem, lešim se. Ne radi
-                    se o tome što nemam kontrolu, mada je i to problem, ali necu da dopustim sebi da se sjutradan
-                    sjećam blamova tokom prilaženja đevojkama.
-                </div>
-                <img src="img/izlazak.jpg" alt="">
-            </div>
-        </section>
-    </div>
-
-    <footer>
-        <div id="contact" class="container">
-            <div class="row">
-                <div class="logo">
-                    <img src="img/logo-png-shadow-white.png" alt="">
-                </div>
-                <div class="contact">
-                    <div class="contact-title">Contact</div>
-                    <a class="mail" href="mailto: mihailo.damjanovic@udg.edu.me">E-mail:
-                        mihailo.damjanovic@udg.edu.me</a>
-                    <div class="phone">Phone: 067 / 123 - 123</div>
-                </div>
-                <div class="selector">
-                    <a href="#home">Početna</a>
-                    <br>
-                    <a href="#about">O meni</a>
-                </div>
-            </div>
-            <hr>
-            <div class="copyright">@Copyright.Ko kopira, bijem.</div>
-        </div>
-    </footer>
-
-
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/script.js/2.0.2/script.min.js"
-        integrity="sha512-UWtTDM6wtl/qutDD6i1JOGZGiEd92dveVzuLl8sMBkMHlOHcbZdexM7ZrKkeaugW7vhqDnWc2pPD/ohEV+BBbg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script defer src="app.js"></script>
+        <a class="port" href="portfolio/index.html">Portfolio</a>
+    </form>
 
 </body>
 
