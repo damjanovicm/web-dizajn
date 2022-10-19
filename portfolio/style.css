@@ -232,11 +232,6 @@ footer .container .row .contact .mail {
     transition: 0.3s;
 }
 
-footer .container .row .contact .mail:hover {
-    font-size: 16px;
-    transition: 0.3s;
-}
-
 
 footer .container .row .contact .phone {
     font-size: 15px;
