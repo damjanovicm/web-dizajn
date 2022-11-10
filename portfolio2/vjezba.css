@@ -4,10 +4,12 @@
     font-family: 'Poppins', sans-serif;
 }
 
+
 body{
     background-image: url('img/Untitled-1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-color: #55387c !important;
 }
 
 .bg{
@@ -117,7 +119,22 @@ form{
         background: linear-gradient(-450deg,#664b8d,#583b81);
     }
 
-    .container .bg{
+    .bg{
         margin: 0;
+        width: 100%;
+        height: 740px;
+    }
+
+    .paragraph{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
