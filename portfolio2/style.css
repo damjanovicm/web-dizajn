@@ -182,12 +182,134 @@ section::before{
     border-radius: 10px;
     border: 3px solid gray;
     box-shadow: 0 0 5px black;
-    background-color: black;
+    background-color: transparent;
     padding: 20px;
     color: lime;
     font-style: italic;
     margin-top: 20px;
+    cursor: pointer;
+    transition: 0.2s;
 }
+
+.container .row .one .not{
+    text-align: center;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.container .row .two .not2{
+    text-align: center;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.container .row .three .not3{
+    text-align: center;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.container .row .one .visible{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.container .row .two .visible{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.container .row .three .visible{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+
+.container .row .one .paragraph1.overlay{
+  color: red;
+  font-size: 20px;  
+  font-weight: bold;
+  /* opacity: 0;   */
+  transition: 0.2s;
+}
+
+.container .row .two .paragraph2.overlay{
+    color: blue;
+    font-size: 20px;  
+    font-weight: bold;
+    /* opacity: 0;   */
+    transition: 0.2s;
+  }
+
+.container .row .three .paragraph3.overlay{
+  color: yellow;
+  font-size: 20px;  
+  font-weight: bold;
+  /* opacity: 0;   */
+  transition: 0.2s;
+} 
+
+.container form{
+    text-align: center;
+    margin: 150px;
+}
+
+.container form label{
+    color: white;
+    font-size: 25px;
+    margin: 10px 0;
+    opacity: 0.6;
+    transition: 0.2s;
+}
+
+.container form label:hover{
+    opacity: 1;
+    transition: 0.2s;
+}
+
+.container form input{
+    font-size: 20px;
+    border-radius: 20px;
+    padding-left: 10px;
+    margin: 10px 0;
+    transition: 0.3s;
+}
+
+.container form input:hover{
+    font-size: 25px;
+    transition: 0.3s;
+}
+
+.container form button{
+    border-radius: 20px;
+    padding: 5px 10px;
+    background-color: transparent;
+    border: 2px solid white;
+    box-shadow: 0 0 5px white;
+    color: white;
+    font-weight: bold;
+    margin: 20px 0;
+    transition: 0.2s;
+}
+
+.container form button:hover{
+    font-size: 20px;
+    border-radius: 30px;
+    transition: 0.2s;
+}
+
 
 @media (max-width: 998px){
 
